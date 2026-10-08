@@ -370,25 +370,6 @@ It does **not** retrain the models when the application is launched.
 -   Matplotlib
 -   Jupyter / Google Colab
 
-------------------------------------------------------------------------
-
-## Contributions
-
-### Arpit Sharma --- Machine Learning & Generalization
-
-Led the ML-focused development of the project, including expansion from
-the initial single-mutation approach to multiple genomic features,
-Logistic Regression, Random Forest and XGBoost modeling, model
-comparison, performance evaluation, expanded-feature experiments,
-unseen-data evaluation, independent external cross-dataset validation,
-generalization analysis, and final ML analysis.
-
-### Akash Khushwaha --- Data Processing & Initial Analysis
-
-Contributed to raw-data preprocessing, data cleaning, initial
-preprocessing, initial genomic feature setup, and the initial
-single-mutation analysis that established the foundation for subsequent
-ML experiments.
 
 ------------------------------------------------------------------------
 
