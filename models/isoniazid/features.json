@@ -1,0 +1,15 @@
+{
+  "drug": "Isoniazid",
+  "model": "Logistic Regression",
+  "threshold": 0.5,
+  "feature_count": 2,
+  "feature_names": [
+    "katG_S315T",
+    "katG_S315N"
+  ],
+  "classes": [
+    "0",
+    "1"
+  ],
+  "positive_class": "1"
+}

@@ -1,0 +1,85 @@
+{
+  "project": "TB-ResistAI",
+  "purpose": "Research prototype for TB drug-resistance prediction",
+  "models": {
+    "RIF": {
+      "drug": "Rifampicin",
+      "model": "Random Forest",
+      "threshold": 0.72,
+      "features": [
+        "rpoB_S450L",
+        "rpoB_H445D",
+        "rpoB_D435V",
+        "rpoB_D435Y",
+        "rpoB_H445Y",
+        "rpoB_H445L",
+        "rpoB_H445R",
+        "rpoB_V170F",
+        "rpoB_L452P",
+        "rpoB_D435A",
+        "rpoB_S450F",
+        "rpoB_S441L",
+        "rpoB_L430P",
+        "rpoB_Q432L",
+        "rpoB_M434R",
+        "rpoB_H445N",
+        "rpoB_S428G",
+        "rpoB_T427I",
+        "rpoB_H445P",
+        "rpoB_N437S",
+        "rpoB_S431R",
+        "rpoB_L443S",
+        "rpoB_S441V",
+        "rpoB_L449M",
+        "rpoB_Q432E",
+        "rpoB_A451G",
+        "rpoB_Q436P",
+        "rpoB_T427G",
+        "rpoB_K446Q",
+        "rpoB_R448L"
+      ],
+      "feature_count": 30,
+      "classes": [
+        "0",
+        "1"
+      ],
+      "artifact": "RIF_model.joblib"
+    },
+    "INH": {
+      "drug": "Isoniazid",
+      "model": "Logistic Regression",
+      "threshold": 0.5,
+      "features": [
+        "katG_S315T",
+        "katG_S315N"
+      ],
+      "feature_count": 2,
+      "classes": [
+        "0",
+        "1"
+      ],
+      "artifact": "INH_model.joblib"
+    },
+    "EMB": {
+      "drug": "Ethambutol",
+      "model": "Random Forest",
+      "threshold": 0.32,
+      "features": [
+        "embB_M306V",
+        "embB_M306I",
+        "embB_Q497R",
+        "embB_G406S",
+        "embB_D354A",
+        "embB_G406A",
+        "embB_Y319S",
+        "embB_G406D"
+      ],
+      "feature_count": 8,
+      "classes": [
+        "0",
+        "1"
+      ],
+      "artifact": "EMB_model.joblib"
+    }
+  }
+}

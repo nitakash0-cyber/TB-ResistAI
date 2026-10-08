@@ -1,0 +1,21 @@
+{
+  "drug": "Ethambutol",
+  "model": "Random Forest",
+  "threshold": 0.32,
+  "feature_count": 8,
+  "feature_names": [
+    "embB_M306V",
+    "embB_M306I",
+    "embB_Q497R",
+    "embB_G406S",
+    "embB_D354A",
+    "embB_G406A",
+    "embB_Y319S",
+    "embB_G406D"
+  ],
+  "classes": [
+    "0",
+    "1"
+  ],
+  "positive_class": "1"
+}
