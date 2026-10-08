@@ -1,0 +1,4 @@
+Drug,Model,Features,Threshold,Internal_ROC_AUC,External_ROC_AUC,External_Accuracy,External_Precision,External_Recall,External_F1,External_95CI
+Rifampicin,Random Forest,30,0.72,0.9259,0.9476,93.2,98.34,87.18,92.43,0.9316–0.9617
+Isoniazid,Logistic Regression,2,0.5,0.8309,0.8791,87.9,97.02,78.2,86.6,0.8593–0.8984
+Ethambutol,Random Forest,8,0.32,0.7922,0.871,85.4,70.06,86.11,77.26,0.8447–0.8960

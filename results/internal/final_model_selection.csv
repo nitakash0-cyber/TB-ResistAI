@@ -1,0 +1,4 @@
+Drug,Final Model,CV ROC-AUC,Test ROC-AUC,Test Accuracy,Test Precision,Test Recall,Test F1
+Rifampicin,Random Forest,0.9149,0.9259,0.9308,0.8684,0.8919,0.88
+Isoniazid,Logistic Regression,0.8097,0.8309,0.8654,0.9178,0.6979,0.7929
+Ethambutol,Random Forest,0.8149,0.7922,0.8169,0.6531,0.5926,0.6214

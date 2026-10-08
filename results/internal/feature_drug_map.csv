@@ -1,0 +1,123 @@
+feature_name,drug,gene,mutation,reference_AA,position,mutant_AA,WHO_grade
+embB_D328Y,Ethambutol,embB,p.Asp328Tyr,D,328,Y,1) Assoc w R
+embB_D354A,Ethambutol,embB,p.Asp354Ala,D,354,A,1) Assoc w R
+embB_Q497R,Ethambutol,embB,p.Gln497Arg,Q,497,R,1) Assoc w R
+embB_Q497K,Ethambutol,embB,p.Gln497Lys,Q,497,K,1) Assoc w R
+embB_G406A,Ethambutol,embB,p.Gly406Ala,G,406,A,1) Assoc w R
+embB_G406D,Ethambutol,embB,p.Gly406Asp,G,406,D,1) Assoc w R
+embB_G406C,Ethambutol,embB,p.Gly406Cys,G,406,C,1) Assoc w R
+embB_G406S,Ethambutol,embB,p.Gly406Ser,G,406,S,1) Assoc w R
+embB_M306I,Ethambutol,embB,p.Met306Ile,M,306,I,1) Assoc w R
+embB_M306L,Ethambutol,embB,p.Met306Leu,M,306,L,1) Assoc w R
+embB_M306V,Ethambutol,embB,p.Met306Val,M,306,V,1) Assoc w R
+embB_Y319C,Ethambutol,embB,p.Tyr319Cys,Y,319,C,1) Assoc w R
+embB_Y319S,Ethambutol,embB,p.Tyr319Ser,Y,319,S,1) Assoc w R
+inhA_S94A,Isoniazid,inhA,p.Ser94Ala,S,94,A,2) Assoc w R - Interim
+katG_S315R,Isoniazid,katG,p.Ser315Arg,S,315,R,1) Assoc w R
+katG_S315N,Isoniazid,katG,p.Ser315Asn,S,315,N,1) Assoc w R
+katG_S315I,Isoniazid,katG,p.Ser315Ile,S,315,I,2) Assoc w R - Interim
+katG_S315T,Isoniazid,katG,p.Ser315Thr,S,315,T,1) Assoc w R
+katG_W328L,Isoniazid,katG,p.Trp328Leu,W,328,L,1) Assoc w R
+rpoB_A451G,Rifampicin,rpoB,p.Ala451Gly,A,451,G,2) Assoc w R - Interim
+rpoB_A451V,Rifampicin,rpoB,p.Ala451Val,A,451,V,2) Assoc w R - Interim
+rpoB_R448Q,Rifampicin,rpoB,p.Arg448Gln,R,448,Q,2) Assoc w R - Interim
+rpoB_R448L,Rifampicin,rpoB,p.Arg448Leu,R,448,L,2) Assoc w R - Interim
+rpoB_R448K,Rifampicin,rpoB,p.Arg448Lys,R,448,K,2) Assoc w R - Interim
+rpoB_N437D,Rifampicin,rpoB,p.Asn437Asp,N,437,D,2) Assoc w R - Interim
+rpoB_N437H,Rifampicin,rpoB,p.Asn437His,N,437,H,2) Assoc w R - Interim
+rpoB_N437I,Rifampicin,rpoB,p.Asn437Ile,N,437,I,2) Assoc w R - Interim
+rpoB_N437S,Rifampicin,rpoB,p.Asn437Ser,N,437,S,2) Assoc w R - Interim
+rpoB_N437Y,Rifampicin,rpoB,p.Asn437Tyr,N,437,Y,2) Assoc w R - Interim
+rpoB_N438H,Rifampicin,rpoB,p.Asn438His,N,438,H,2) Assoc w R - Interim
+rpoB_D435A,Rifampicin,rpoB,p.Asp435Ala,D,435,A,2) Assoc w R - Interim
+rpoB_D435N,Rifampicin,rpoB,p.Asp435Asn,D,435,N,2) Assoc w R - Interim
+rpoB_D435E,Rifampicin,rpoB,p.Asp435Glu,D,435,E,2) Assoc w R - Interim
+rpoB_D435G,Rifampicin,rpoB,p.Asp435Gly,D,435,G,2) Assoc w R - Interim
+rpoB_D435H,Rifampicin,rpoB,p.Asp435His,D,435,H,2) Assoc w R - Interim
+rpoB_D435L,Rifampicin,rpoB,p.Asp435Leu,D,435,L,2) Assoc w R - Interim
+rpoB_D435F,Rifampicin,rpoB,p.Asp435Phe,D,435,F,1) Assoc w R
+rpoB_D435Y,Rifampicin,rpoB,p.Asp435Tyr,D,435,Y,1) Assoc w R
+rpoB_D435V,Rifampicin,rpoB,p.Asp435Val,D,435,V,1) Assoc w R
+rpoB_Q429H,Rifampicin,rpoB,p.Gln429His,Q,429,H,2) Assoc w R - Interim
+rpoB_Q429L,Rifampicin,rpoB,p.Gln429Leu,Q,429,L,2) Assoc w R - Interim
+rpoB_Q429P,Rifampicin,rpoB,p.Gln429Pro,Q,429,P,2) Assoc w R - Interim
+rpoB_Q432N,Rifampicin,rpoB,p.Gln432Asn,Q,432,N,2) Assoc w R - Interim
+rpoB_Q432E,Rifampicin,rpoB,p.Gln432Glu,Q,432,E,2) Assoc w R - Interim
+rpoB_Q432H,Rifampicin,rpoB,p.Gln432His,Q,432,H,2) Assoc w R - Interim
+rpoB_Q432L,Rifampicin,rpoB,p.Gln432Leu,Q,432,L,1) Assoc w R
+rpoB_Q432K,Rifampicin,rpoB,p.Gln432Lys,Q,432,K,1) Assoc w R
+rpoB_Q432P,Rifampicin,rpoB,p.Gln432Pro,Q,432,P,1) Assoc w R
+rpoB_Q436R,Rifampicin,rpoB,p.Gln436Arg,Q,436,R,2) Assoc w R - Interim
+rpoB_Q436N,Rifampicin,rpoB,p.Gln436Asn,Q,436,N,2) Assoc w R - Interim
+rpoB_Q436P,Rifampicin,rpoB,p.Gln436Pro,Q,436,P,2) Assoc w R - Interim
+rpoB_G426S,Rifampicin,rpoB,p.Gly426Ser,G,426,S,2) Assoc w R - Interim
+rpoB_G442E,Rifampicin,rpoB,p.Gly442Glu,G,442,E,2) Assoc w R - Interim
+rpoB_H445R,Rifampicin,rpoB,p.His445Arg,H,445,R,1) Assoc w R
+rpoB_H445N,Rifampicin,rpoB,p.His445Asn,H,445,N,1) Assoc w R
+rpoB_H445D,Rifampicin,rpoB,p.His445Asp,H,445,D,1) Assoc w R
+rpoB_H445C,Rifampicin,rpoB,p.His445Cys,H,445,C,1) Assoc w R
+rpoB_H445Q,Rifampicin,rpoB,p.His445Gln,H,445,Q,2) Assoc w R - Interim
+rpoB_H445G,Rifampicin,rpoB,p.His445Gly,H,445,G,2) Assoc w R - Interim
+rpoB_H445L,Rifampicin,rpoB,p.His445Leu,H,445,L,1) Assoc w R
+rpoB_H445F,Rifampicin,rpoB,p.His445Phe,H,445,F,2) Assoc w R - Interim
+rpoB_H445P,Rifampicin,rpoB,p.His445Pro,H,445,P,2) Assoc w R - Interim
+rpoB_H445S,Rifampicin,rpoB,p.His445Ser,H,445,S,1) Assoc w R
+rpoB_H445T,Rifampicin,rpoB,p.His445Thr,H,445,T,2) Assoc w R - Interim
+rpoB_H445Y,Rifampicin,rpoB,p.His445Tyr,H,445,Y,1) Assoc w R
+rpoB_I491F,Rifampicin,rpoB,p.Ile491Phe,I,491,F,1) Assoc w R
+rpoB_L430R,Rifampicin,rpoB,p.Leu430Arg,L,430,R,2) Assoc w R - Interim
+rpoB_L430P,Rifampicin,rpoB,p.Leu430Pro,L,430,P,1) Assoc w R
+rpoB_L443F,Rifampicin,rpoB,p.Leu443Phe,L,443,F,2) Assoc w R - Interim
+rpoB_L443S,Rifampicin,rpoB,p.Leu443Ser,L,443,S,2) Assoc w R - Interim
+rpoB_L443W,Rifampicin,rpoB,p.Leu443Trp,L,443,W,2) Assoc w R - Interim
+rpoB_L449M,Rifampicin,rpoB,p.Leu449Met,L,449,M,2) Assoc w R - Interim
+rpoB_L452M,Rifampicin,rpoB,p.Leu452Met,L,452,M,2) Assoc w R - Interim
+rpoB_L452P,Rifampicin,rpoB,p.Leu452Pro,L,452,P,1) Assoc w R
+rpoB_L452V,Rifampicin,rpoB,p.Leu452Val,L,452,V,2) Assoc w R - Interim
+rpoB_K446R,Rifampicin,rpoB,p.Lys446Arg,K,446,R,2) Assoc w R - Interim
+rpoB_K446Q,Rifampicin,rpoB,p.Lys446Gln,K,446,Q,2) Assoc w R - Interim
+rpoB_K446E,Rifampicin,rpoB,p.Lys446Glu,K,446,E,2) Assoc w R - Interim
+rpoB_K446T,Rifampicin,rpoB,p.Lys446Thr,K,446,T,2) Assoc w R - Interim
+rpoB_M434R,Rifampicin,rpoB,p.Met434Arg,M,434,R,2) Assoc w R - Interim
+rpoB_M434I,Rifampicin,rpoB,p.Met434Ile,M,434,I,2) Assoc w R - Interim
+rpoB_M434L,Rifampicin,rpoB,p.Met434Leu,M,434,L,2) Assoc w R - Interim
+rpoB_M434T,Rifampicin,rpoB,p.Met434Thr,M,434,T,2) Assoc w R - Interim
+rpoB_M434V,Rifampicin,rpoB,p.Met434Val,M,434,V,2) Assoc w R - Interim
+rpoB_P439A,Rifampicin,rpoB,p.Pro439Ala,P,439,A,2) Assoc w R - Interim
+rpoB_P439L,Rifampicin,rpoB,p.Pro439Leu,P,439,L,2) Assoc w R - Interim
+rpoB_P439S,Rifampicin,rpoB,p.Pro439Ser,P,439,S,2) Assoc w R - Interim
+rpoB_S428R,Rifampicin,rpoB,p.Ser428Arg,S,428,R,2) Assoc w R - Interim
+rpoB_S428G,Rifampicin,rpoB,p.Ser428Gly,S,428,G,2) Assoc w R - Interim
+rpoB_S428I,Rifampicin,rpoB,p.Ser428Ile,S,428,I,2) Assoc w R - Interim
+rpoB_S428T,Rifampicin,rpoB,p.Ser428Thr,S,428,T,2) Assoc w R - Interim
+rpoB_S431R,Rifampicin,rpoB,p.Ser431Arg,S,431,R,2) Assoc w R - Interim
+rpoB_S431N,Rifampicin,rpoB,p.Ser431Asn,S,431,N,2) Assoc w R - Interim
+rpoB_S431G,Rifampicin,rpoB,p.Ser431Gly,S,431,G,2) Assoc w R - Interim
+rpoB_S431T,Rifampicin,rpoB,p.Ser431Thr,S,431,T,2) Assoc w R - Interim
+rpoB_S441A,Rifampicin,rpoB,p.Ser441Ala,S,441,A,2) Assoc w R - Interim
+rpoB_S441Q,Rifampicin,rpoB,p.Ser441Gln,S,441,Q,1) Assoc w R
+rpoB_S441L,Rifampicin,rpoB,p.Ser441Leu,S,441,L,1) Assoc w R
+rpoB_S441K,Rifampicin,rpoB,p.Ser441Lys,S,441,K,2) Assoc w R - Interim
+rpoB_S441M,Rifampicin,rpoB,p.Ser441Met,S,441,M,2) Assoc w R - Interim
+rpoB_S441W,Rifampicin,rpoB,p.Ser441Trp,S,441,W,2) Assoc w R - Interim
+rpoB_S441V,Rifampicin,rpoB,p.Ser441Val,S,441,V,2) Assoc w R - Interim
+rpoB_S450A,Rifampicin,rpoB,p.Ser450Ala,S,450,A,2) Assoc w R - Interim
+rpoB_S450C,Rifampicin,rpoB,p.Ser450Cys,S,450,C,2) Assoc w R - Interim
+rpoB_S450Q,Rifampicin,rpoB,p.Ser450Gln,S,450,Q,2) Assoc w R - Interim
+rpoB_S450G,Rifampicin,rpoB,p.Ser450Gly,S,450,G,2) Assoc w R - Interim
+rpoB_S450L,Rifampicin,rpoB,p.Ser450Leu,S,450,L,1) Assoc w R
+rpoB_S450M,Rifampicin,rpoB,p.Ser450Met,S,450,M,2) Assoc w R - Interim
+rpoB_S450F,Rifampicin,rpoB,p.Ser450Phe,S,450,F,1) Assoc w R
+rpoB_S450W,Rifampicin,rpoB,p.Ser450Trp,S,450,W,1) Assoc w R
+rpoB_S450Y,Rifampicin,rpoB,p.Ser450Tyr,S,450,Y,1) Assoc w R
+rpoB_S450V,Rifampicin,rpoB,p.Ser450Val,S,450,V,2) Assoc w R - Interim
+rpoB_T427A,Rifampicin,rpoB,p.Thr427Ala,T,427,A,2) Assoc w R - Interim
+rpoB_T427N,Rifampicin,rpoB,p.Thr427Asn,T,427,N,2) Assoc w R - Interim
+rpoB_T427G,Rifampicin,rpoB,p.Thr427Gly,T,427,G,2) Assoc w R - Interim
+rpoB_T427I,Rifampicin,rpoB,p.Thr427Ile,T,427,I,2) Assoc w R - Interim
+rpoB_T427P,Rifampicin,rpoB,p.Thr427Pro,T,427,P,2) Assoc w R - Interim
+rpoB_T427S,Rifampicin,rpoB,p.Thr427Ser,T,427,S,2) Assoc w R - Interim
+rpoB_T444I,Rifampicin,rpoB,p.Thr444Ile,T,444,I,2) Assoc w R - Interim
+rpoB_T444P,Rifampicin,rpoB,p.Thr444Pro,T,444,P,2) Assoc w R - Interim
+rpoB_T444S,Rifampicin,rpoB,p.Thr444Ser,T,444,S,2) Assoc w R - Interim
+rpoB_V170F,Rifampicin,rpoB,p.Val170Phe,V,170,F,1) Assoc w R

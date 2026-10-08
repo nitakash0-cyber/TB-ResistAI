@@ -1,0 +1,10 @@
+Drug,Model,Best_ROC_AUC,Best_Params
+Rifampicin,Logistic Regression,0.8994783516311214,"{'C': 1, 'solver': 'liblinear'}"
+Rifampicin,Random Forest,0.9149145932418599,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 2, 'n_estimators': 100}"
+Rifampicin,XGBoost,0.8972166712270229,"{'colsample_bytree': 0.8, 'learning_rate': 0.05, 'max_depth': 7, 'n_estimators': 200, 'subsample': 1.0}"
+Isoniazid,Logistic Regression,0.8096711352847583,"{'C': 100, 'solver': 'liblinear'}"
+Isoniazid,Random Forest,0.8093943793532755,"{'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 2, 'n_estimators': 100}"
+Isoniazid,XGBoost,0.805653303439563,"{'colsample_bytree': 0.8, 'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 100, 'subsample': 0.8}"
+Ethambutol,Logistic Regression,0.8130848469522706,"{'C': 0.01, 'solver': 'liblinear'}"
+Ethambutol,Random Forest,0.8149215359707943,"{'max_depth': 5, 'max_features': 'log2', 'min_samples_split': 10, 'n_estimators': 300}"
+Ethambutol,XGBoost,0.8140071153896461,"{'colsample_bytree': 1.0, 'learning_rate': 0.01, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}"
