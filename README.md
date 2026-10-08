@@ -90,13 +90,10 @@ independent assessment of model generalization.
 ------------------------------------------------------------------------
 
 ## Final Selected Models
-
-  Drug             Final Model                 Features   Decision Threshold
-  ---------------- ------------------------- ---------- --------------------
-  **Rifampicin**   **Random Forest**             **30**             **0.72**
-  **Isoniazid**    **Logistic Regression**        **2**             **0.50**
-  **Ethambutol**   **Random Forest**              **8**             **0.32**
-
+Drug	Model	Features	Threshold
+Rifampicin	Random Forest	30	0.72
+Isoniazid	Logistic Regression	2	0.50
+Ethambutol	Random Forest	8	0.32
 The final fitted models are loaded by the Streamlit application for
 inference. The application does not retrain the models.
 
@@ -128,13 +125,10 @@ previously unseen data.
 ## Final External Validation Results
 
   ------------------------------------------------------------------------------------------
-  Drug                  ROC-AUC          95% CI   Accuracy   Precision     Recall   F1-score
-  ---------------- ------------ --------------- ---------- ----------- ---------- ----------
-  **Rifampicin**     **94.76%**   93.16--96.17%     93.20%      98.34%     87.18%     92.43%
-
-  **Isoniazid**          87.91%   85.93--89.84%     87.90%      97.02%     78.20%     86.60%
-
-  **Ethambutol**         87.10%   84.47--89.60%     85.40%      70.06%     86.11%     77.26%
+  Drug	ROC-AUC	95% CI	Accuracy	Precision	Recall	F1
+Rifampicin	94.76%	93.16–96.17%	93.20%	98.34%	87.18%	92.43%
+Isoniazid	87.91%	85.93–89.84%	87.90%	97.02%	78.20%	86.60%
+Ethambutol	87.10%	84.47–89.60%	85.40%	70.06%	86.11%	77.26%
   ------------------------------------------------------------------------------------------
 
 ### Rifampicin External ROC-AUC
