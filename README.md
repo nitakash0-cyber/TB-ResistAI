@@ -88,6 +88,18 @@ independent assessment of model generalization.
 > pipeline.
 
 ------------------------------------------------------------------------
+## Final Selected Models
+
+The final models were selected based on their performance during model development and validation. Each drug uses its finalized model, feature set, and decision threshold.
+
+| Drug | Final Model | Features | Decision Threshold |
+|---|---|---:|---:|
+| **Rifampicin** | **Random Forest** | **30** | **0.72** |
+| **Isoniazid** | **Logistic Regression** | **2** | **0.50** |
+| **Ethambutol** | **Random Forest** | **8** | **0.32** |
+
+The final fitted models are loaded directly by the Streamlit application for inference. The application uses the saved model parameters and does **not retrain the models** during prediction.
+
 
 ## Final External Validation Results
 
@@ -125,7 +137,6 @@ previously unseen data.
 
 ------------------------------------------------------------------------
 
-## Final External Validation Results
 
 ### External Validation Summary
 
