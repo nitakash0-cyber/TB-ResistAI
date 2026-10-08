@@ -7,18 +7,8 @@ tuberculosis (TB) drug resistance from genomic mutation features.
 
 The project investigates how machine-learning models can learn
 resistance patterns from genomic information and, importantly, evaluates
-how well the developed models generalize to independent data from a
-different dataset.
-
-The workflow progresses from initial genomic feature analysis through
-multiple-feature representation, model development, model comparison,
-unseen-data evaluation, independent external validation, cross-dataset
-evaluation, and generalization analysis.
-
-> **Research prototype only:** This project is intended for research and
-> educational purposes. Model predictions must not be used as a
-> substitute for laboratory drug-susceptibility testing or clinical
-> decision-making.
+how well the developed models generalize to an independent external
+dataset.
 
 ------------------------------------------------------------------------
 
@@ -28,12 +18,9 @@ The primary objective is to investigate whether genomic mutation
 features can be used to predict resistance to selected first-line
 tuberculosis drugs using supervised machine-learning approaches.
 
-A major focus of the project is **generalization**.
-
-Rather than evaluating models only on data derived from the same dataset
-used during development, the project includes evaluation on an
-independent external dataset to examine whether the learned patterns
-remain effective under a different data source.
+A major focus of the project is **generalization**: evaluating whether
+patterns learned during model development remain effective when tested
+on an independent external dataset.
 
 ------------------------------------------------------------------------
 
@@ -61,41 +48,40 @@ Cross-Dataset Evaluation
 Generalization Analysis
 ```
 
-This workflow separates model development from independent evaluation
-and places particular emphasis on understanding the performance gap
-between internal and external datasets.
-
 ------------------------------------------------------------------------
 
 ## Machine-Learning Models
 
-Three supervised machine-learning approaches were investigated:
+The project investigates three supervised machine-learning approaches:
 
--   **Logistic Regression**
--   **Random Forest**
--   **XGBoost**
+  -----------------------------------------------------------------------
+  Model                               Role
+  ----------------------------------- -----------------------------------
+  Logistic Regression                 Linear classification baseline and
+                                      final model for Isoniazid
 
-The models were evaluated using classification performance metrics and
-compared during the model-development stage.
+  Random Forest                       Ensemble classification model and
+                                      final model for Rifampicin and
+                                      Ethambutol
 
-The final deployed model configuration was selected separately for each
-drug based on the project's model-evaluation process.
+  XGBoost                             Gradient-boosted tree model
+                                      evaluated during model comparison
+  -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
 
 ## Genomic Feature Approach
 
-The project evolved from an initial **single-mutation representation**
-toward an expanded representation using multiple genomic mutation
-features.
+The project progressed from an initial **single-mutation
+representation** toward an expanded representation using multiple
+genomic mutation features.
 
-This progression allowed the study to examine whether using a broader
-genomic feature representation could provide a more useful signal for
-predicting drug resistance.
+This progression allowed the study to evaluate whether a broader genomic
+feature representation could provide a more useful predictive signal.
 
 The feature representation was kept consistent between model development
-and external evaluation to ensure that the external validation
-represented a genuine test of model generalization.
+and external evaluation so that external testing represented an
+independent assessment of model generalization.
 
 > The project does not make biological claims about individual mutations
 > beyond what is supported by the underlying data and feature-processing
@@ -105,28 +91,26 @@ represented a genuine test of model generalization.
 
 ## Final Selected Models
 
-  Drug             Final Model             Features   Decision Threshold
-  ---------------- --------------------- ---------- --------------------
-  **Rifampicin**   Random Forest                 30                 0.72
-  **Isoniazid**    Logistic Regression            2                 0.50
-  **Ethambutol**   Random Forest                  8                 0.32
+  Drug             Final Model                 Features   Decision Threshold
+  ---------------- ------------------------- ---------- --------------------
+  **Rifampicin**   **Random Forest**             **30**             **0.72**
+  **Isoniazid**    **Logistic Regression**        **2**             **0.50**
+  **Ethambutol**   **Random Forest**              **8**             **0.32**
 
-The models stored in the repository are already fitted models. The
-Streamlit application loads these models for inference and does not
-retrain them during application use.
+The final fitted models are loaded by the Streamlit application for
+inference. The application does not retrain the models.
 
 ------------------------------------------------------------------------
 
-## Independent External Validation
+# Independent External Validation
 
-### Why External Validation Matters
+## Why External Validation Matters
 
-A high score on an internal test set does not necessarily mean that a
-machine-learning model will generalize well to data collected under
-different conditions.
+High performance on an internal test set does not necessarily mean that
+a model will generalize to data collected from a different source.
 
-Therefore, an independent external dataset was used to evaluate the
-generalization of the developed models.
+Therefore, an independent external dataset was used to evaluate
+generalization.
 
 The external dataset was treated as an **independent evaluation
 dataset** and was not used for:
@@ -136,9 +120,8 @@ dataset** and was not used for:
 -   Feature selection
 -   Model selection
 
-This separation is important because it provides a more realistic
-assessment of how the developed models perform on previously unseen
-data.
+This separation provides a more realistic assessment of performance on
+previously unseen data.
 
 ------------------------------------------------------------------------
 
@@ -156,55 +139,41 @@ data.
 
 ### Rifampicin External ROC-AUC
 
-The detailed external-results table records the Rifampicin ROC-AUC as:
+The detailed external-results table records the Rifampicin ROC-AUC as
+**94.758925%**, which is reported above as **94.76%**.
 
-``` text
-94.758925%
-```
-
-which is reported here as:
-
-``` text
-94.76%
-```
-
-The reported 95% confidence interval is:
-
-``` text
-93.16% – 96.17%
-```
+The reported 95% confidence interval is **93.16%--96.17%**.
 
 ------------------------------------------------------------------------
 
 ## Generalization Analysis
 
-The external validation stage is a central component of TB-ResistAI.
+External validation is a central component of TB-ResistAI.
 
 The analysis compares model performance between the development/internal
 evaluation setting and an independent external dataset.
 
-This makes it possible to investigate:
+The analysis investigates:
 
--   Whether the learned genomic patterns transfer to unseen data
--   How performance changes across datasets
+-   Transfer of learned genomic patterns to unseen data
+-   Performance changes across datasets
 -   Differences in ROC-AUC and classification metrics
 -   Potential generalization gaps
 -   Drug-specific differences in predictive performance
 
-The goal is not simply to maximize performance on a single dataset, but
-to understand how robust the learned patterns are when evaluated on
-independent data.
+The objective is not simply to maximize performance on one dataset, but
+to evaluate how robust the learned patterns are on independent data.
 
 ------------------------------------------------------------------------
 
-## Prediction Application
+# Prediction Application
 
 TB-ResistAI includes a Streamlit-based prediction interface.
 
 The application is designed around the finalized models rather than
-asking the user to choose an arbitrary machine-learning algorithm.
+allowing users to arbitrarily select a machine-learning algorithm.
 
-The intended workflow is:
+### Application workflow
 
 ``` text
 User enters detected mutation profile
@@ -221,56 +190,50 @@ Drug-wise predictions are compared
 Model-based results are displayed
 ```
 
-The application automatically uses the finalized model associated with
-each drug:
+### Automatic model selection
 
-``` text
-Rifampicin  → Random Forest
-Isoniazid   → Logistic Regression
-Ethambutol  → Random Forest
-```
+  Drug         Automatically Used Model     Feature Count   Threshold
+  ------------ -------------------------- --------------- -----------
+  Rifampicin   Random Forest                           30        0.72
+  Isoniazid    Logistic Regression                      2        0.50
+  Ethambutol   Random Forest                            8        0.32
 
-The decision thresholds stored with the fitted models are used for the
-corresponding classification step.
+The user does **not** select the machine-learning algorithm. The
+application uses the finalized model associated with each drug.
 
 ------------------------------------------------------------------------
 
-## Important Interpretation of Model Metrics
+## Interpretation of Model Metrics
 
-### ROC-AUC
+  -----------------------------------------------------------------------
+  Metric                              Meaning
+  ----------------------------------- -----------------------------------
+  **ROC-AUC**                         Measures the ability to distinguish
+                                      resistant and susceptible samples
+                                      across classification thresholds
 
-Measures the ability of a model to distinguish between resistant and
-susceptible samples across classification thresholds.
+  **Accuracy**                        Proportion of samples classified
+                                      correctly overall
 
-### Precision
+  **Precision**                       Proportion of predicted resistant
+                                      samples that are actually resistant
 
-Measures the proportion of predicted resistant samples that are actually
-resistant.
+  **Recall / Sensitivity**            Proportion of resistant samples
+                                      correctly identified
 
-### Recall / Sensitivity
+  **F1-score**                        Harmonic balance between precision
+                                      and recall
 
-Measures the proportion of resistant samples correctly identified by the
-model.
+  **External ROC-AUC**                Discrimination performance on the
+                                      independent external dataset
+  -----------------------------------------------------------------------
 
-### F1-score
-
-Provides a balance between precision and recall.
-
-### Accuracy
-
-Measures the proportion of correctly classified samples overall.
-
-### External ROC-AUC
-
-Measures discrimination performance when the model is evaluated on the
-independent external dataset.
-
-These evaluation metrics describe **model performance**. They are not
+These metrics describe **model performance**. They are not
 individual-patient treatment recommendations.
 
 ------------------------------------------------------------------------
 
-## Project Structure
+# Project Structure
 
 ``` text
 TB-Drug-Resistance-ML/
@@ -316,17 +279,18 @@ TB-Drug-Resistance-ML/
 
 ## Reproducibility and Data
 
-The project uses genomic and phenotypic data for model development and
-external evaluation.
+Raw/source datasets are kept out of this public-ready repository until
+redistribution permissions are verified.
 
-Raw/source datasets are not included in this public-ready repository
-until their redistribution permissions have been verified.
-
-The complete project backup containing the working data and intermediate
+The complete working backup containing raw data and intermediate
 artifacts is maintained separately as the private master copy.
 
 The notebooks document the major stages of preprocessing, feature
 development, model training, model comparison, and external validation.
+
+The public repository contains the code, fitted model artifacts,
+documentation, and appropriate results needed to understand the project
+without exposing restricted source data.
 
 ------------------------------------------------------------------------
 
@@ -360,23 +324,23 @@ It does **not** retrain the models when the application is launched.
 
 ## Technologies Used
 
--   Python
--   Pandas
--   NumPy
--   Scikit-learn
--   XGBoost
--   Joblib
--   Streamlit
--   Matplotlib
--   Jupyter / Google Colab
+  Technology               Purpose
+  ------------------------ ----------------------------------------
+  Python                   Core programming language
+  Pandas                   Data processing
+  NumPy                    Numerical computation
+  Scikit-learn             Machine-learning models and evaluation
+  XGBoost                  Gradient-boosted machine learning
+  Joblib                   Saving and loading fitted models
+  Streamlit                Interactive prediction application
+  Matplotlib               Visualization
+  Jupyter / Google Colab   Research and experimentation
+
 
 
 ------------------------------------------------------------------------
 
-## Limitations
-
-This project is a machine-learning research prototype and has several
-important limitations:
+# Limitations
 
 -   Model performance may vary across datasets and populations.
 -   External validation performance does not guarantee clinical
@@ -390,7 +354,7 @@ important limitations:
 
 ------------------------------------------------------------------------
 
-## Disclaimer
+# Disclaimer
 
 > **TB-ResistAI is a research and educational machine-learning
 > prototype.** It is not intended for clinical diagnosis, prescription,
@@ -399,6 +363,6 @@ important limitations:
 
 ------------------------------------------------------------------------
 
-## Project Status
+# Project Status
 
 **Research prototype --- external validation completed.**
